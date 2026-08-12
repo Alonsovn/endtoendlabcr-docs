@@ -4,9 +4,7 @@ A brief description of your project. Explain what the project does, its primary 
 
 ## 📑 Table of Contents
 
-- [Project Name](#project-name)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [✨ Features](#-features)
+- [✨ Features](#-features)
   - [🛠️ Technologies Used](#️-technologies-used)
   - [🚀 Getting Started](#-getting-started)
     - [⚙️ Prerequisites](#️-prerequisites)
@@ -23,8 +21,6 @@ A brief description of your project. Explain what the project does, its primary 
 - Example: User authentication
 - Example: RESTful API
 - Example: Responsive UI
-
-[⬆️ Back to Top](#project-name)
 
 ## 🛠️ Technologies Used
 
@@ -52,8 +48,6 @@ npm install
 yarn install
 ```
 
-[⬆️ Back to Top](#project-name)
-
 ### 🏃 Running the App
 
 ```sh
@@ -70,8 +64,6 @@ Access the app at `http://localhost:3000` (or specify another port if needed).
 - Example:
   - `API_URL` - The endpoint for the backend API
   - `PORT` - The port number to run the app
-
-[⬆️ Back to Top](#project-name)
 
 ## 🔗 Important Links to Have at Hand
 
@@ -102,5 +94,3 @@ Contributions are welcome! Please follow these steps:
 ---
 
 _Built with ❤️ by [Your Name](https://github.com/your-username)_
-
-[⬆️ Back to Top](#project-name)

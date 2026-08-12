@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "EndToEndLabCR ",
+  title: "EndToEndLabCR",
   tagline: "A collaborative space for building modern fullstack applications.",
   favicon: "img/favicon.ico",
 
@@ -18,14 +18,15 @@ const config: Config = {
   url: "https://endtoendlabcr.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/documentation-docs-markdown/",
+  baseUrl: "/endtoendlabcr-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "EndToEndLabCR", // Usually your GitHub org/user name.
-  projectName: "documentation-docs-markdown", // Usually your repo name.
+  projectName: "endtoendlabcr-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
+  onBrokenAnchors: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -43,22 +44,9 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/EndToEndLabCR/",
+          editUrl: "https://github.com/EndToEndLabCR/endtoendlabcr-docs/edit/main/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/EndToEndLabCR/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -86,7 +74,7 @@ const config: Config = {
           label: "Documentation",
         },
         {
-          href: "https://github.com/EndToEndLabCR/",
+          href: "https://github.com/EndToEndLabCR/endtoendlabcr-docs",
           label: "GitHub",
           position: "right",
         },
@@ -122,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/EndToEndLabCR",
+              href: "https://github.com/EndToEndLabCR/endtoendlabcr-docs",
             },
           ],
         },

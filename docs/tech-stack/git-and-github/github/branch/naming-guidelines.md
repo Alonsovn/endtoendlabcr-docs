@@ -30,8 +30,6 @@ To keep our repositories clean, understandable, and collaboration-friendly, we f
 
 ---
 
-[⬆️ Back to Top](#-branch-naming-guidelines)
-
 ## 🔁 Optional: Include Issue Numbers
 
 To associate a branch with a GitHub issue:
@@ -53,5 +51,3 @@ bugfix/105-missing-validation
 ---
 
 Following this convention makes it easier to review, track, and automate contributions across our projects. 🚀
-
-[⬆️ Back to Top](#-branch-naming-guidelines)

@@ -15,8 +15,6 @@ The `main` branch is always in a deployable state. It contains production-ready 
 - **Main**: Production-ready code.
 - **Feature Branches**: Short-lived branches for new features or bug fixes. Created from `main` and merged back into `main` via pull requests.
 
-[⬆️ Back to Top](#github-flow-strategy)
-
 ### Workflow Steps
 
 1. **Fork the Repository**: Each developer forks the main repository to their own GitHub account.
@@ -54,8 +52,6 @@ The `main` branch is always in a deployable state. It contains production-ready 
    git branch -d feature/awesome-feature
    ```
 
-[⬆️ Back to Top](#github-flow-strategy)
-
 ## Deployment Process
 
 1. **Plan the Deployment to the Dev Environment**: A created PR into `main` will trigger the build process for the Docker images and will run a Terraform plan for the deployment to the dev environment.
@@ -65,8 +61,6 @@ The `main` branch is always in a deployable state. It contains production-ready 
 3. **Deploy to Stage**: Ensure the currently deployed dev environment passes QA checks. When a new tag is created with the name `v*.*.*-rc.*`, it will trigger a deployment to the staging environment.
 
 4. **Deploy to Prod**: When a new tag is created with the name `v*.*.*`, it will trigger a deployment to the production environment.
-
-[⬆️ Back to Top](#github-flow-strategy)
 
 ## Rollback Process
 
@@ -98,5 +92,3 @@ The `main` branch is always in a deployable state. It contains production-ready 
    git tag -a v1.0.1 -m "Hotfix after rollback"
    git push origin main --tags
    ```
-
-   [⬆️ Back to Top](#github-flow-strategy)

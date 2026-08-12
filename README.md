@@ -1,6 +1,6 @@
-# documentation
+# endtoendlabcr-docs
 
-[![Deploy Docusaurus Site](https://github.com/EndToEndLabCR/documentation-docs-markdown/actions/workflows/deploy.yml/badge.svg)](https://github.com/EndToEndLabCR/documentation-docs-markdown/actions/workflows/deploy.yml)
+[![Deploy Docusaurus Site](https://github.com/EndToEndLabCR/endtoendlabcr-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/EndToEndLabCR/endtoendlabcr-docs/actions/workflows/deploy.yml)
 
 A centralized repository for relevant documentation, guides, and best practices. This project serves as a knowledge base for tools and technologies we frequently use, including GitHub, Python, React, Docker, Postman, and more.
 
@@ -37,14 +37,14 @@ A centralized repository for relevant documentation, guides, and best practices.
 
 ```sh
 # Clone the repository
-git clone https://github.com/your-username/documentation.git
-cd documentation
+git clone https://github.com/EndToEndLabCR/endtoendlabcr-docs.git
+cd endtoendlabcr-docs
 ```
 
 ## 🔗 Important Links
 
-- [Open Issues](https://github.com/EndToEndLabCR/documentation/issues)
-- [Open PR](https://github.com/EndToEndLabCR/documentation/pulls)
+- [Open Issues](https://github.com/EndToEndLabCR/endtoendlabcr-docs/issues)
+- [Open PR](https://github.com/EndToEndLabCR/endtoendlabcr-docs/pulls)
 
 [⬆️ Back to Top](#documentation)
 
@@ -56,10 +56,10 @@ Contributions are welcome! Please follow these steps:
 2. Create a feature branch: `git checkout -b docs/YourTopic`
 3. Commit your changes: `git commit -am 'Add documentation for [topic]'`
 4. Push to the branch: `git push origin docs/YourTopic`
-5. Open a [pull request](https://github.com/EndToEndLabCR/documentation/pulls)
+5. Open a [pull request](https://github.com/EndToEndLabCR/endtoendlabcr-docs/pulls)
 
-📄 For more details, please refer to the [Contributions Guidelines.](./docs/contributions-guidelines.md)
+📄 For more details, please refer to the [documentation introduction.](./docs/intro.md)
 
-_Built with ❤️ by [EndToEndLabCR](https://github.com/EndToEndLabCR)_
+_Built with by [EndToEndLabCR](https://github.com/EndToEndLabCR)_
 
 [⬆️ Back to Top](#documentation)

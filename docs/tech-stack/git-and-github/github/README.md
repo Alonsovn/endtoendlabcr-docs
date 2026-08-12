@@ -40,5 +40,3 @@ You'll find documentation on repository naming, branching strategies, commit con
 Explore each guide for detailed instructions and practical examples. These standards help ensure consistency, clarity, and collaboration across all repositories and contributors in the organization.
 
 ---
-
-[⬆️ Back to Top](#-github-documentation)
