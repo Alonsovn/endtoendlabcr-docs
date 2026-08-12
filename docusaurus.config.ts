@@ -2,28 +2,21 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: "EndToEndLabCR",
   tagline: "A collaborative space for building modern fullstack applications.",
-  favicon: "img/favicon.ico",
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
   url: "https://endtoendlabcr.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // For GitHub pages deployment, the baseUrl is often '/<projectName>/'
   baseUrl: "/endtoendlabcr-docs/",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "EndToEndLabCR", // Usually your GitHub org/user name.
-  projectName: "endtoendlabcr-docs", // Usually your repo name.
+  organizationName: "EndToEndLabCR",
+  projectName: "endtoendlabcr-docs",
 
   onBrokenLinks: "throw",
   onBrokenAnchors: "throw",
@@ -42,8 +35,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/EndToEndLabCR/endtoendlabcr-docs/edit/main/",
         },
         blog: false,
@@ -55,8 +46,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
