@@ -1,3 +1,7 @@
+---
+sidebar_label: FastAPI + CLI + Kafka Project Tree
+---
+
 # Clean Architecture FastAPI + CLI + Kafka Project Structure
 
 ```

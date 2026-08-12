@@ -29,8 +29,6 @@ fix: correct button alignment on mobile
 
 ---
 
-[⬆️ Back to Top](#commit-guidelines)
-
 ## 2. Write Clear and Concise Messages
 
 - Use the **imperative mood**: “Add feature” not “Added” or “Adds”.
@@ -50,8 +48,6 @@ Fixes #123
 ```
 
 ---
-
-[⬆️ Back to Top](#commit-guidelines)
 
 ## 4. Examples
 
@@ -84,5 +80,3 @@ This type of commit is used for routine tasks such as updating dependencies, con
 
 - Use a linter like Commitlint to enforce commit message format.
 - Squash commits before merging to keep history clean.
-
-[⬆️ Back to Top](#commit-guidelines)

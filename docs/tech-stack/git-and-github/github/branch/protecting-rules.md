@@ -37,8 +37,6 @@ Follow these steps to protect important branches like `main` or `production`:
 6. **Save Changes**
    - Click **"Create"** or **"Save changes"** at the bottom.
 
-[⬆️ Back to Top](#-branch-protection-rules)
-
 ---
 
 ## 🔒 Recommended Settings for `main` or `production`
@@ -63,5 +61,3 @@ Main branch ruleset example:
 - Use wildcards like `release/*` to apply rules to multiple branches.
 - Combine with GitHub Actions for automated checks and workflows.
 - Regularly review and update rules as your team grows.
-
-[⬆️ Back to Top](#-branch-protection-rules)

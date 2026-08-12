@@ -44,7 +44,7 @@ This documentation is a living resource that evolves with our practices and tech
 If you can't find what you're looking for in this documentation:
 
 1. **Search First**: Use the search functionality or browse related sections
-2. **Ask the Team**: Reach out to team members via Slack or during team meetings
+2. **Ask the Team**: Reach out to team members via [Discord](https://discord.gg/mAD7Y6fNzv)
 3. **Create an Issue**: Submit a documentation request or improvement suggestion
 4. **Office Hours**: Attend regular team office hours for complex questions
 

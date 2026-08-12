@@ -8,8 +8,6 @@ This strategy includes `main`, `develop`, `feature`, `release`, and `hotfix` bra
 
 ![how_it_works](images/how_it_works.svg)
 
-[⬆️ Back to Top](#gitflow-strategy)
-
 ### Develop and main branches
 
 Instead of a single `main` branch, this workflow uses two branches to
@@ -29,8 +27,6 @@ git push -u origin develop
 
 This branch will contain the complete history of the project, whereas `main`
 will contain an abridged version.
-
-[⬆️ Back to Top](#gitflow-strategy)
 
 ### Branching Model
 
@@ -53,8 +49,6 @@ git clone https://git.cglcloud.com/your-org/your-repo.git
 cd your-repo
 git remote add upstream https://git.cglcloud.com/your-org/your-repo.git
 ```
-
-[⬆️ Back to Top](#gitflow-strategy)
 
 ### **Feature branches**
 
@@ -94,8 +88,6 @@ tests are completed before merging.
 git branch -d feature/awesome-feature
 git push origin --delete feature/awesome-feature
 ```
-
-[⬆️ Back to Top](#gitflow-strategy)
 
 ## Release branches
 
@@ -142,8 +134,6 @@ git checkout develop
 git merge release/1.0.0
 ```
 
-[⬆️ Back to Top](#gitflow-strategy)
-
 ## Hotfix Branches
 
 ![hotfix_branches](images/hotfix_branches.svg)
@@ -170,8 +160,6 @@ git checkout develop
 git merge hotfix/1.0.1
 ```
 
-[⬆️ Back to Top](#gitflow-strategy)
-
 ## Deployment Process
 
 1. **Deploy to the Dev Environment**: When a PR against `develop` is merged,
@@ -185,8 +173,6 @@ git merge hotfix/1.0.1
 1. **Deploy to Prod**: Open a pull request from `release/*` branch to the
    `main`. To trigger the production deployment create a tag in the `main` branch.
    Some good tag names might be `v1.0.0` or `v2.3.4`.
-
-[⬆️ Back to Top](#gitflow-strategy)
 
 ## Rollback Process
 
@@ -230,5 +216,3 @@ git merge hotfix/1.0.1
 
 > For more info please refer to the following documentation
 > [Atlassian Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
-
-[⬆️ Back to Top](#gitflow-strategy)
