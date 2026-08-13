@@ -20,12 +20,12 @@ Think of it like a **save point system** in a video game. Every time you make a 
 
 ### Key Concepts
 
-| Term | What it means | Analogy |
-|---|---|---|
-| **Repository (repo)** | A folder with all your project files + Git history | A project folder |
-| **Commit** | A saved snapshot of your changes | A save point |
-| **Branch** | A parallel version of your code | A parallel universe |
-| **Main/Master** | The default, stable branch | The "real world" |
+| Term                  | What it means                                      | Analogy             |
+| --------------------- | -------------------------------------------------- | ------------------- |
+| **Repository (repo)** | A folder with all your project files + Git history | A project folder    |
+| **Commit**            | A saved snapshot of your changes                   | A save point        |
+| **Branch**            | A parallel version of your code                    | A parallel universe |
+| **Main/Master**       | The default, stable branch                         | The "real world"    |
 
 ---
 
@@ -34,35 +34,36 @@ Think of it like a **save point system** in a video game. Every time you make a 
 **GitHub is a website that hosts Git repositories** so multiple people can work together.
 
 Without GitHub, Git only lives on your computer. GitHub puts it online so others can:
+
 - See your code
 - Suggest changes
 - Review your work before it goes live
 
 ### GitHub-Specific Concepts
 
-| Term | What it means |
-|---|---|
-| **Fork** | Your personal copy of someone else's repo |
-| **Clone** | Downloading a repo to your computer |
+| Term                  | What it means                                            |
+| --------------------- | -------------------------------------------------------- |
+| **Fork**              | Your personal copy of someone else's repo                |
+| **Clone**             | Downloading a repo to your computer                      |
 | **Pull Request (PR)** | A request to merge your changes into someone else's repo |
-| **Merge** | Combining your changes into the main codebase |
-| **Upstream** | The original repo you forked from |
-| **Origin** | Your fork (your copy on GitHub) |
+| **Merge**             | Combining your changes into the main codebase            |
+| **Upstream**          | The original repo you forked from                        |
+| **Origin**            | Your fork (your copy on GitHub)                          |
 
 ---
 
 ## Part 3: How It All Fits Together
 
 ```
-                    ┌─────────────────────────┐
-                    │   GitHub (the cloud)    │
-                    │                         │
-  ┌─────────────┐   │   ┌───────────────────┐ │   ┌──────────────────┐
-  │  Upstream   │   │   │   Your Fork       │ │   │  Other People's  │
-  │ (original)  │◄──┼──►│   (origin)        │◄──┼──►│  Forks           │
-  └─────────────┘   │   └───────────────────┘ │   └──────────────────┘
-                    │            ▲             │
-                    └────────────┼─────────────┘
+                    ┌────────────────────────┐
+                    │   GitHub (the cloud)   │
+                    │                        │
+  ┌─────────────┐   │   ┌─────────────────┐  │   ┌──────────────────┐
+  │  Upstream   │   │   │   Your Fork     │  │   │  Other People's  │
+  │ (original)  │◄──┼──►│   (origin)      │◄─┼─► │  Forks           │
+  └─────────────┘   │   └─────────────────┘  │   └──────────────────┘
+                    │            ▲           │
+                    └────────────┼───────────┘
                                  │ git push / git pull
                                  ▼
                     ┌─────────────────────────┐
@@ -75,6 +76,7 @@ Without GitHub, Git only lives on your computer. GitHub puts it online so others
 ```
 
 **The flow:**
+
 1. You **fork** the upstream repo → creates your copy on GitHub
 2. You **clone** your fork → downloads it to your computer
 3. You **branch** off main → creates a safe space to work
@@ -166,14 +168,14 @@ optional body (explains why, not what)
 
 ### Types
 
-| Type | When to use | Example |
-|---|---|---|
-| `docs` | Documentation changes | `docs: add git guide` |
-| `feat` | New features | `feat: add user profile page` |
-| `fix` | Bug fixes | `fix: correct typo in README` |
+| Type       | When to use                             | Example                         |
+| ---------- | --------------------------------------- | ------------------------------- |
+| `docs`     | Documentation changes                   | `docs: add git guide`           |
+| `feat`     | New features                            | `feat: add user profile page`   |
+| `fix`      | Bug fixes                               | `fix: correct typo in README`   |
 | `refactor` | Code restructuring (no behavior change) | `refactor: simplify auth logic` |
-| `chore` | Maintenance tasks | `chore: update dependencies` |
-| `style` | Formatting, whitespace | `style: fix indentation` |
+| `chore`    | Maintenance tasks                       | `chore: update dependencies`    |
+| `style`    | Formatting, whitespace                  | `style: fix indentation`        |
 
 ### Good vs Bad Commits
 
@@ -293,9 +295,9 @@ git push origin --delete wrong-branch
 Print this or keep it open while you work:
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────┐
 │                    GIT QUICK REFERENCE                       │
-├─────────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────────┤
 │  git status              → See what changed                  │
 │  git diff                → See the actual changes            │
 │  git add <file>          → Stage a file                      │
@@ -307,11 +309,11 @@ Print this or keep it open while you work:
 │  git branch -d <name>    → Delete a branch                   │
 │  git log --oneline       → See commit history                │
 │  git remote -v           → See connected repos               │
-├─────────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────────┤
 │  Before every new task:                                      │
 │    git checkout main && git pull upstream main               │
-├─────────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────────┤
 │  Commit format: type: description                            │
 │  Types: docs | feat | fix | refactor | chore | style         │
-└─────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────┘
 ```
