@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Git & GitHub Guide
@@ -287,6 +287,17 @@ git push origin correct-branch
 # 4. Delete the wrong branch on GitHub
 git push origin --delete wrong-branch
 ```
+
+---
+
+## Next Steps
+
+Now that you know the Git basics, it's time to start contributing:
+
+- Read our [branch naming guidelines](../tech-stack/git-and-github/github/branch/naming-guidelines.md)
+- Learn about our [branching strategy](../tech-stack/git-and-github/branching-strategy.md)
+- Review the [code review guidelines](../tech-stack/git-and-github/code-review-guidelines.md)
+- Ready to code? Follow the [Setting Up Your Local Environment](./setting-up-local-environment.md) guide
 
 ---
 
