@@ -4,9 +4,11 @@ sidebar_position: 3
 
 # Your First Contribution with Git & GitHub
 
-This guide walks you through the practical steps of contributing to an EndToEndLabCR project — from cloning to your first merged pull request.
+This guide walks you through the practical steps of contributing to an EndToEndLabCR project — from forking to your first merged pull request. For detailed reference on any step, links point to the source-of-truth guides in the Tech Stack section.
 
 > **New to Git?** Start with the [Git & GitHub Basics](../tech-stack/git-and-github/git-basics.md) guide first, then come back here for the hands-on workflow.
+
+> **Want to practice?** Try the [First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github) — a sandbox exercise to rehearse the contribution workflow before contributing to any EndToEndLabCR repo (docs, templates, or projects).
 
 ---
 
@@ -27,6 +29,8 @@ git remote -v
 # You should see: origin (your fork) and upstream (original)
 ```
 
+> See [Essential Git Commands](../tech-stack/git-and-github/github/essential-commands.md) for a full reference of everyday Git commands.
+
 ---
 
 ## 2. Daily Workflow (every contribution)
@@ -41,98 +45,49 @@ git push origin main
 # 2. Create a new branch for your work
 git checkout -b feature/what-youre-doing
 
-# 3. Make your changes (edit files, add files, etc.)
-
-# 4. Check what changed
+# 3. Make your changes, then check what changed
 git status
 git diff
 
-# 5. Stage your changes
-git add <file>          # specific file
-git add .               # all changed files
-
-# 6. Commit your changes
+# 4. Stage and commit
+git add .
 git commit -m "type: description"
 
-# 7. Push to your fork
+# 5. Push to your fork
 git push -u origin feature/what-youre-doing
-
-# 8. Open a PR on GitHub (see next section)
 ```
+
+> See [Branching Strategy](../tech-stack/git-and-github/branching-strategy.md) for workflow details and [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md) for commit format.
 
 ---
 
 ## 3. Commit Messages
 
-We use **Conventional Commits** — a standard format that makes history readable.
+We follow **Conventional Commits** (`type: summary`). See the full [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md) for details.
 
-### Format
-
-```
-type: description
-
-optional body (explains why, not what)
-```
-
-### Types
+Common types:
 
 | Type       | When to use                             | Example                         |
 | ---------- | --------------------------------------- | ------------------------------- |
-| `docs`     | Documentation changes                   | `docs: add git guide`           |
+| `docs`     | Documentation changes                   | `docs: add setup instructions`  |
 | `feat`     | New features                            | `feat: add user profile page`   |
 | `fix`      | Bug fixes                               | `fix: correct typo in README`   |
 | `refactor` | Code restructuring (no behavior change) | `refactor: simplify auth logic` |
 | `chore`    | Maintenance tasks                       | `chore: update dependencies`    |
 | `style`    | Formatting, whitespace                  | `style: fix indentation`        |
 
-### Good vs Bad Commits
-
-```
-❌ Bad:  "update file"
-✅ Good: "docs: add setup instructions for macOS"
-
-❌ Bad:  "fix"
-✅ Good: "fix: correct broken link in README"
-
-❌ Bad:  "changes"
-✅ Good: "feat: add user profile with name and avatar"
-```
-
 ---
 
 ## 4. Pull Requests
 
-### How to Create One
-
-1. Push your branch to your fork: `git push -u origin your-branch`
+1. Push your branch: `git push -u origin your-branch`
 2. Go to the **original repo** on GitHub
-3. Click **"Compare & pull request"** (GitHub usually shows this prompt)
-4. Or go to: `https://github.com/EndToEndLabCR/repo/compare/main...YOUR-USERNAME:your-branch`
+3. Click **"Compare & pull request"**
+4. Or visit: `https://github.com/EndToEndLabCR/repo/compare/main...YOUR-USERNAME:your-branch`
 
-### A Good PR Has
+A good PR includes a clear title (follow commit format), a description of what you changed and why, screenshots (if UI changed), and linked issues.
 
-- **Clear title:** Follow the commit format (`type: description`)
-- **Description:** What you changed and why
-- **Screenshots** (if UI changed)
-- **Linked issues** (if fixing a specific issue)
-
-### PR Review Process
-
-```
-You open PR
-    │
-    ▼
-Team reviews → Leave comments/suggestions
-    │
-    ▼
-You address feedback → Push more commits
-    │
-    ▼
-Reviewer approves → PR gets merged
-    │
-    ▼
-Your branch is deleted (usually)
-```
+> See [Code Review Guidelines](../tech-stack/git-and-github/code-review-guidelines.md) for the review process and checklist. See the [PR Template](../tech-stack/git-and-github/github/resources/PULL_REQUEST_TEMPLATE.md) for the standard format.
 
 ---
 
@@ -212,12 +167,29 @@ git push origin --delete wrong-branch
 
 ---
 
+## 7. Practice: Contribute to the Organization
+
+Reading about Git is one thing — doing it is another. Before contributing to a real EndToEndLabCR repo, put everything in this guide into practice with a hands-on exercise.
+
+**[First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github)** — a sandbox repository where you can fork, branch, commit, and open your first pull request. The same workflow you practice here applies to contributing across the entire EndToEndLabCR organization: this docs site, template repos, project repos, and more.
+
+1. **Fork** the lab repo on GitHub (click the "Fork" button)
+2. **Clone** your fork locally: `git clone https://github.com/YOUR-USERNAME/firstcommit-lab-github.git`
+3. **Add a file** under the `participants/` folder (e.g., your name or a short intro)
+4. **Commit** using the Conventional Commits format above (e.g., `feat: add intro for Alonso`)
+5. **Push** to your fork: `git push -u origin feature/your-name`
+6. **Open a pull request** back to the original repo and watch it go through review
+
+> **Tip:** This is a safe exercise — experiment and make mistakes here. Once you're comfortable with the workflow, you're ready to contribute to any EndToEndLabCR repo: documentation (like this site), templates, or projects. See the [Onboarding Guide](./onboarding-guide.md) to find where to start.
+
 ---
 
 ## Related Guides
 
 - [Git & GitHub Basics](../tech-stack/git-and-github/git-basics.md) — theory and concepts
+- [Essential Git Commands](../tech-stack/git-and-github/github/essential-commands.md) — command reference
 - [Branch Naming Guidelines](../tech-stack/git-and-github/github/branch/naming-guidelines.md)
 - [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md)
 - [Code Review Guidelines](../tech-stack/git-and-github/code-review-guidelines.md)
 - [Branching Strategy](../tech-stack/git-and-github/branching-strategy.md)
+- [First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github) — hands-on exercise to practice before contributing to any EndToEndLabCR repo
