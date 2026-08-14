@@ -8,6 +8,8 @@ This guide walks you through the practical steps of contributing to an EndToEndL
 
 > **New to Git?** Start with the [Git & GitHub Basics](../tech-stack/git-and-github/git-basics.md) guide first, then come back here for the hands-on workflow.
 
+> **Need org access?** See [Day 1 of the Onboarding Guide](./onboarding-guide.md#day-1-accounts-and-access) to learn how to request membership to the EndToEndLabCR GitHub organization.
+
 > **Want to practice?** Try the [First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github) — a sandbox exercise to rehearse the contribution workflow before contributing to any EndToEndLabCR repo (docs, templates, or projects).
 
 ---

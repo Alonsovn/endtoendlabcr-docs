@@ -11,7 +11,10 @@ Welcome to EndToEndLabCR! This guide walks new contributors through their first 
 ### Day 1: Accounts and Access
 
 - [ ] Create a GitHub account (if you don't have one)
-- [ ] Request access to the [EndToEndLabCR GitHub organization](https://github.com/EndToEndLabCR)
+- [ ] Request access to the [EndToEndLabCR GitHub organization](https://github.com/EndToEndLabCR) — pick any of these:
+  - **Discord:** Message a maintainer in the community channels
+  - **GitHub org page:** Visit [github.com/EndToEndLabCR](https://github.com/EndToEndLabCR) and click "Join organization"
+  - **Email:** Send a request to the project maintainers
 - [ ] Join our [Discord community](https://discord.gg/mAD7Y6fNzv)
 - [ ] Introduce yourself in the community channels
 
@@ -88,7 +91,7 @@ Welcome to EndToEndLabCR! This guide walks new contributors through their first 
 
 - **Communication**: [Discord](https://discord.gg/mAD7Y6fNzv) and email
 - **Video Calls**: Discord "Reuniones" channel
-- **Project Management**: GitHub Projects
+- **Project Management**: `TBD`
 - **Documentation**: This repository
 
 ### Monitoring and Deployment
