@@ -1,10 +1,8 @@
-# 🌿 Branch Naming Guidelines
+# Branch Naming Guidelines
 
-To keep our repositories clean, understandable, and collaboration-friendly, we follow a consistent naming convention for Git branches.
+All work branches follow a consistent naming convention. This is a subset of the full [Branching Strategy](../../ci-cd-pipeline.md#1-branching-strategy); see the CI/CD Pipeline doc for the complete workflow.
 
----
-
-## 🧪 Naming Format
+## Naming Format
 
 ```text
 <type>/<short-description>
@@ -13,41 +11,36 @@ To keep our repositories clean, understandable, and collaboration-friendly, we f
 - `<type>` is the category of work being done
 - `<short-description>` is a lowercase, hyphen-separated summary of the change
 
----
+## Accepted Branch Types
 
-## ✅ Accepted Branch Types
+| Branch type   | Pattern                       | Example                       | Targets |
+| ------------- | ----------------------------- | ----------------------------- | ------- |
+| Feature       | `feature/<short-description>` | `feature/ai-refinement-ui`    | `dev`   |
+| Bug fix       | `fix/<issue-description>`     | `fix/login-redirect-loop`     | `dev`   |
+| Documentation | `docs/<topic>`                | `docs/update-readme`          | `dev`   |
+| Refactoring   | `refactor/<component>`        | `refactor/auth-service`       | `dev`   |
+| Tests         | `test/<scope>`                | `test/auth-endpoints`         | `dev`   |
+| Chores        | `chore/<task>`                | `chore/update-dependencies`   | `dev`   |
+| Hotfix        | `hotfix/<description>`        | `hotfix/fix-login-regression` | `main`  |
 
-| Type       | Description                                     | Example                          |
-| ---------- | ----------------------------------------------- | -------------------------------- |
-| `feature`  | New feature or enhancement                      | `feature/user-authentication`    |
-| `bugfix`   | Fixing a bug or issue                           | `bugfix/login-validation-error`  |
-| `refactor` | Internal code improvements without new behavior | `refactor/db-connection-handler` |
-| `docs`     | Changes or additions to documentation           | `docs/add-api-usage-guide`       |
-| `chore`    | Routine tasks like config updates               | `chore/update-eslint-config`     |
-| `hotfix`   | Emergency fixes to production code              | `hotfix/fix-env-vars`            |
-| `security` | Vulnerability patches or security upgrades      | `security/bump-fastapi-version`  |
-| `test`     | Adding or updating tests                        | `test/add-auth-tests`            |
+All work branches are created from `dev` (except hotfixes, which branch from `main`).
 
----
-
-## 🔁 Optional: Include Issue Numbers
+## Optional: Include Issue Numbers
 
 To associate a branch with a GitHub issue:
 
 ```text
 feature/42-user-registration
-bugfix/105-missing-validation
+fix/105-missing-validation
 ```
 
----
-
-## 💡 Best Practices
+## Best Practices
 
 - Use lowercase and hyphens (`-`) for readability
 - Keep descriptions concise and clear
-- Avoid long or vague names like `fix-stuff` or `new-branch`
-- Keep each branch focused on one logical change or purpose
+- Avoid vague names like `fix-stuff` or `new-branch`
+- Keep each branch focused on one logical change
 
 ---
 
-Following this convention makes it easier to review, track, and automate contributions across our projects. 🚀
+**Next:** [Code Review Guidelines](../../code-review-guidelines.md)

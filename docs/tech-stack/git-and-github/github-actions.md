@@ -1,10 +1,10 @@
 # GitHub Actions
 
-This file covers GitHub Actions for CI/CD automation and workflow management.
+GitHub Actions powers our CI/CD pipeline. This guide covers syntax and patterns; for our org-specific pipeline configuration (branches, environments, approval gates), see the [CI/CD Pipeline Architecture](./ci-cd-pipeline.md).
 
 ## What are GitHub Actions?
 
-GitHub Actions is a CI/CD platform that allows you to automate your build, test, and deployment pipeline directly in your GitHub repository.
+GitHub Actions is a CI/CD platform that lets you automate builds, tests, and deployments. Workflows are defined in YAML files under `.github/workflows/` and triggered by events like pushes, pull requests, or scheduled runs.
 
 ## Basic Workflow
 
@@ -14,21 +14,21 @@ name: CI
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, dev]
   pull_request:
-    branches: [main]
+    branches: [main, dev]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           cache: "npm"
 
       - name: Install dependencies
@@ -41,7 +41,7 @@ jobs:
         run: npm run lint
 ```
 
-## Common Workflows
+## Common Patterns
 
 ### Node.js Application
 
@@ -56,12 +56,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x, 20.x]
+        node-version: [18.x, 20.x, 22.x]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
@@ -81,12 +81,12 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.8, 3.9, 3.10]
+        python-version: [3.11, 3.12, 3.13]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
@@ -111,7 +111,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Deploy to staging
         run: |
@@ -126,10 +126,14 @@ jobs:
 
 ## Best Practices
 
-- Use official actions when available
+- Use official actions when available (prefer `@v4` or later)
 - Cache dependencies for faster builds
 - Use matrix builds for multiple environments
-- Store secrets securely
-- Use environment protection rules
+- Store secrets in GitHub encrypted secrets — never in the repo
+- Use environment protection rules for `main` and `dev` branches
 - Implement proper error handling
 - Monitor workflow performance
+
+---
+
+**Reference:** [Generic Git Workflows](./github/flows/) — GitFlow and GitHub Flow (for context)

@@ -29,7 +29,7 @@ Welcome to EndToEndLabCR! This guide walks new contributors through their first 
 
 - [ ] Read through this documentation
 - [ ] Review our [coding guidelines](../organizational-best-practices/coding-guidelines.md)
-- [ ] Understand our [Git workflow and branching strategy](../tech-stack/git-and-github/branching-strategy.md)
+- [ ] Understand our [Git workflow and branching strategy](../tech-stack/git-and-github/ci-cd-pipeline.md)
 - [ ] Familiarize yourself with our [CI/CD pipelines](../organizational-best-practices/ci-cd-pipelines.md)
 - [ ] Complete the [Setting Up Your Local Environment](./setting-up-local-environment.md) tutorial
 
@@ -47,7 +47,7 @@ Welcome to EndToEndLabCR! This guide walks new contributors through their first 
 - [ ] Create a feature branch following our [naming conventions](../tech-stack/git-and-github/github/branch/naming-guidelines.md)
 - [ ] Make your changes following our [coding guidelines](../organizational-best-practices/coding-guidelines.md)
 - [ ] Write tests for your changes
-- [ ] Submit your first pull request using our [PR template](../tech-stack/git-and-github/github/resources/PULL_REQUEST_TEMPLATE.md)
+- [ ] Submit your first pull request using our [PR template](../tech-stack/git-and-github/resources/PULL_REQUEST_TEMPLATE.md)
 - [ ] Address code review feedback
 
 ## Essential Knowledge Areas

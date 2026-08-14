@@ -114,9 +114,10 @@ Print this or keep it open while you work:
 
 ## Next Steps
 
-Ready to start contributing? Follow our practical guides:
+Ready to start contributing? Follow this reading order:
 
-- [Your First Contribution Guide](../../guides-and-tutorials/git-github-guide.md) — commands, PRs, and common mistakes
-- [Branch Naming Guidelines](./github/branch/naming-guidelines.md)
-- [Commit Message Guidelines](./github/commits-guide.md)
-- [Code Review Guidelines](./code-review-guidelines.md)
+1. [Essential Commands](./github/essential-commands.md) — quick reference for everyday Git usage
+2. [Your First Contribution Guide](../../guides-and-tutorials/git-github-guide.md) — commands, PRs, and common mistakes
+3. [First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github) — hands-on practice
+
+Once comfortable with the basics, move to our [CI/CD Pipeline Architecture](./ci-cd-pipeline.md) to learn our specific workflow.

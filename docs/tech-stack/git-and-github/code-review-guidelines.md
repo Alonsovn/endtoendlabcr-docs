@@ -1,6 +1,8 @@
 # Code Review Guidelines
 
-This file establishes guidelines for effective code reviews that maintain code quality and foster team collaboration.
+Code reviews are essential to maintaining quality and sharing knowledge across EndToEndLabCR projects. For our PR approval requirements (1 approval for `dev`, 2 for `main`), see the [CI/CD Pipeline Architecture](./ci-cd-pipeline.md#4-pr-conventions).
+
+These guidelines cover what to check before creating a PR, how to review effectively, and how to give and receive feedback constructively.
 
 ## Code Review Process
 
@@ -86,3 +88,7 @@ This file establishes guidelines for effective code reviews that maintain code q
 "Bad code"
 "Doesn't make sense"
 ```
+
+---
+
+**Next:** [Repository Naming Guidelines](./github/projects-guide.md)

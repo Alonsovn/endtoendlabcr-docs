@@ -59,7 +59,7 @@ git commit -m "type: description"
 git push -u origin feature/what-youre-doing
 ```
 
-> See [Branching Strategy](../tech-stack/git-and-github/branching-strategy.md) for workflow details and [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md) for commit format.
+> See [CI/CD Pipeline Architecture](../tech-stack/git-and-github/ci-cd-pipeline.md) for workflow details and [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md) for commit format.
 
 ---
 
@@ -89,7 +89,7 @@ Common types:
 
 A good PR includes a clear title (follow commit format), a description of what you changed and why, screenshots (if UI changed), and linked issues.
 
-> See [Code Review Guidelines](../tech-stack/git-and-github/code-review-guidelines.md) for the review process and checklist. See the [PR Template](../tech-stack/git-and-github/github/resources/PULL_REQUEST_TEMPLATE.md) for the standard format.
+> See [Code Review Guidelines](../tech-stack/git-and-github/code-review-guidelines.md) for the review process and checklist. See the [PR Template](../tech-stack/git-and-github/resources/PULL_REQUEST_TEMPLATE.md) for the standard format.
 
 ---
 
@@ -193,5 +193,5 @@ Reading about Git is one thing — doing it is another. Before contributing to a
 - [Branch Naming Guidelines](../tech-stack/git-and-github/github/branch/naming-guidelines.md)
 - [Commit Message Guidelines](../tech-stack/git-and-github/github/commits-guide.md)
 - [Code Review Guidelines](../tech-stack/git-and-github/code-review-guidelines.md)
-- [Branching Strategy](../tech-stack/git-and-github/branching-strategy.md)
+- [CI/CD Pipeline Architecture](../tech-stack/git-and-github/ci-cd-pipeline.md) — our branching strategy and workflow
 - [First Commit Lab](https://github.com/EndToEndLabCR/firstcommit-lab-github) — hands-on exercise to practice before contributing to any EndToEndLabCR repo

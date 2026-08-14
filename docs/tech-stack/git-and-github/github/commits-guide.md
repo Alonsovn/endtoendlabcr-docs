@@ -1,13 +1,13 @@
 # Commit Guidelines
 
-Writing clear and meaningful commit messages helps your team understand the history of changes and improves collaboration.
+Writing clear and meaningful commit messages helps your team understand the history of changes and improves collaboration. For our complete CI/CD pipeline and branch workflow, see the [CI/CD Pipeline Architecture](../ci-cd-pipeline.md).
 
 ---
 
-## 1. Use the Conventional Commit Format (Optional but Recommended)
+## 1. Use the Conventional Commit Format
 
 ```bash
-<type>(optional): <short summary>
+<type>(optional scope): <short summary>
 ```
 
 ## Example
@@ -22,8 +22,8 @@ fix: correct button alignment on mobile
 - `feat`: new feature
 - `fix`: bug fix
 - `docs`: documentation only
-- `style`: formatting, missing semi colons, etc.
-- `ref`: code change that neither fixes a bug nor adds a feature
+- `style`: formatting, missing semi colons, etc
+- `refactor`: code change that neither fixes a bug nor adds a feature
 - `test`: adding or fixing tests
 - `chore`: maintenance tasks
 
@@ -80,3 +80,7 @@ This type of commit is used for routine tasks such as updating dependencies, con
 
 - Use a linter like Commitlint to enforce commit message format.
 - Squash commits before merging to keep history clean.
+
+---
+
+**Next:** [Branch Naming Guidelines](./branch/naming-guidelines.md)

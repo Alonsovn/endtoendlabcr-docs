@@ -2,9 +2,7 @@
 
 To maintain consistency, clarity, and scalability across all projects in the organization, we follow a structured naming convention for repositories.
 
----
-
-## 🧱 Project Structure
+## Project Structure
 
 Our repositories are named using the following pattern:
 
@@ -12,9 +10,7 @@ Our repositories are named using the following pattern:
 <projectname>-<type>-<technology>
 ```
 
----
-
-## 🔹 Components Explained
+## Components Explained
 
 | Segment       | Description                               | Examples                                                       |
 | ------------- | ----------------------------------------- | -------------------------------------------------------------- |
@@ -22,9 +18,7 @@ Our repositories are named using the following pattern:
 | `type`        | Purpose of the repository                 | `web`, `api`, `mobile`, `desktop`, `infra`, `tool`, `template` |
 | `technology`  | Primary tech or stack used                | `react`, `fastapi`, `flutter`, `electron`, `terraform`, `vite` |
 
----
-
-## ✅ Accepted `type` Values
+## Accepted `type` Values
 
 | Type      | Use Case                             |
 | --------- | ------------------------------------ |
@@ -35,28 +29,26 @@ Our repositories are named using the following pattern:
 | `infra`   | Infrastructure, CI/CD, automation    |
 | `tool`    | Scripts, utilities, internal tools   |
 
----
+## Repo Name Examples
 
-## 📦 Repo Name Examples
-
-### 🚀 Demo Application
+### Demo Application
 
 | Repository Name       | Description                |
 | --------------------- | -------------------------- |
 | `demoapp-web-react`   | React web frontend         |
 | `demoapp-api-fastapi` | Backend service in FastAPI |
 
----
-
-### 🧰 Internal Tools & Templates
+### Internal Tools & Templates
 
 | Repository Name        | Description                    |
 | ---------------------- | ------------------------------ |
 | `template-api-fastapi` | API starter template           |
 | `template-web-react`   | Vite + React frontend template |
 
+> This convention helps our team and community contributors instantly understand what each repo is for, what tech it uses, and which project it belongs to.
+
+For any questions or additions to the convention, reach out in the Discord community channels.
+
 ---
 
-> 🧩 This convention helps our team and community contributors instantly understand what each repo is for, what tech it uses, and which project it belongs to.
-
-For any questions or additions to the convention, open an issue in the `.github` repository.
+**Next:** [GitHub Actions](../github-actions.md)
