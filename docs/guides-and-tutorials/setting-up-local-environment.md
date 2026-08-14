@@ -8,7 +8,7 @@ This guide walks you through setting up a complete development environment for E
 
 > **You don't need everything.** Pick the tools that match the stack you plan to contribute to. A Python contributor doesn't need Java, and a frontend contributor doesn't need Maven.
 
-Prefer detailed IDE guides? See [VS Code setup](../install-and-setup/installing-and-setting-up-vscode.md), [PyCharm setup](../install-and-setup/installing-and-setting-up-pycharm.md), and [Homebrew install](../install-and-setup/install-brew.md).
+Prefer detailed IDE guides? See [VS Code setup](../install-and-setup/installing-and-setting-up-vscode.md), [PyCharm setup](../install-and-setup/installing-and-setting-up-pycharm.md), and [Homebrew install](../install-and-setup/install-brew.md). We also use AI coding assistants: [OpenCode](../install-and-setup/opencode.md) and [Claude Code](../install-and-setup/claude-code.md) — both read `AGENTS.md` for project context.
 
 ## Prerequisites
 
@@ -152,7 +152,20 @@ Create `.vscode/settings.json` in your workspace:
 }
 ```
 
-## Step 5: Docker
+## Step 5: AI Coding Assistants (optional)
+
+We use **OpenCode** and **Claude Code** as terminal-based AI coding assistants. Pick one or both — they integrate with your existing IDE and help with code generation, refactoring, debugging, and PR workflows.
+
+Both tools (and any AI agent that supports it) read `AGENTS.md` files for project context. Our `AGENTS.md` at the repo root ensures consistent behavior across all AI tools — no need to re-explain the project to each agent.
+
+| Tool | What it is | Install |
+| --- | --- | --- |
+| **[OpenCode](../install-and-setup/opencode.md)** | Open-source AI coding agent with LSP support, multi-session, and 75+ model providers | See install guide |
+| **[Claude Code](../install-and-setup/claude-code.md)** | Anthropic's coding agent, runs in terminal/IDE, included with Claude Pro/Max plans | See install guide |
+
+Both tools work alongside your IDE — you don't need to replace your current workflow. Run them in a terminal next to your editor, or install the VS Code / JetBrains extensions.
+
+## Step 6: Docker
 
 Docker is useful for running databases and services without installing them natively.
 
@@ -174,7 +187,7 @@ docker pull postgres:14
 docker pull redis:7-alpine
 ```
 
-## Step 6: Database Quick Start
+## Step 7: Database Quick Start
 
 ### PostgreSQL
 
@@ -207,7 +220,7 @@ ALTER USER devuser CREATEDB;
 redis-cli ping   # should return PONG
 ```
 
-## Step 7: Verify Everything
+## Step 8: Verify Everything
 
 ```bash
 echo "=== Tool Versions ==="

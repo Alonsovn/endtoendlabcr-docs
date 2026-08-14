@@ -83,6 +83,7 @@ Welcome to EndToEndLabCR! This guide walks new contributors through their first 
 ### Development Tools
 
 - **IDE**: IntelliJ IDEA, PyCharm, or VS Code
+- **AI Coding Assistants**: [OpenCode](https://opencode.ai) or [Claude Code](https://claude.ai/code) — both read `AGENTS.md` for project context, so setup and workflow instructions work consistently across any AI agent
 - **Version Control**: Git with GitHub
 - **API Testing**: Postman or OpenAPI
 - **Database Tools**: pgAdmin
